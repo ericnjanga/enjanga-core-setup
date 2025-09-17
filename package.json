@@ -1,5 +1,5 @@
 {
-  "name": "@enjanga-com/core-setup",
+  "name": "@enjanga-com/enjanga-core-setup",
   "version": "1.0.0",
   "description": "Complete Carbon Design System dependency bundle with all required peers and utilities",
   "main": "dist/index.js",
@@ -90,12 +90,12 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/enjanga-com/core-setup.git"
+    "url": "https://github.com/ericnjanga/enjanga-core-setup.git"
   },
   "bugs": {
-    "url": "https://github.com/enjanga-com/core-setup/issues"
+    "url": "https://github.com/ericnjanga/enjanga-core-setup/issues"
   },
-  "homepage": "https://github.com/enjanga-com/core-setup#readme",
+  "homepage": "https://github.com/ericnjanga/enjanga-core-setup#readme",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
