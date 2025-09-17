@@ -16,8 +16,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup src/index.ts --dts --dts-resolve --format esm,cjs --out-dir dist",
-    "dev": "tsup src/index.ts --dts --dts-resolve --format esm,cjs --out-dir dist --watch",
+    "build": "tsup src/index.ts --dts --format esm,cjs --out-dir dist",
+    "dev": "tsup src/index.ts --dts --format esm,cjs --out-dir dist --watch",
     "type-check": "tsc --noEmit",
     "prepublishOnly": "npm run build && npm run type-check",
     "lint": "eslint src --ext .ts,.tsx",
@@ -28,9 +28,6 @@
     "@carbon/styles": "^1.90.0",
     "@carbon/pictograms-react": "^11.67.0",
     "@carbon/icons-react": "^11.67.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "next": "^15.3.4",
     "clsx": "^2.1.1",
     "sass": "^1.89.2",
     "@tanstack/react-query": "^5.83.0",
