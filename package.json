@@ -1,5 +1,5 @@
 {
-  "name": "@enjanga-com/enjanga-core-setup",
+  "name": "enjanga-core-setup",
   "version": "1.0.0",
   "description": "Complete Carbon Design System dependency bundle with all required peers and utilities",
   "main": "dist/index.js",
