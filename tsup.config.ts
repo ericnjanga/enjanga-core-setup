@@ -2,16 +2,18 @@
 import { defineConfig } from "tsup";
 
 export default defineConfig({
-  entry: ["src/index.ts"],
+  entry: ["src/index.ts", "src/next.ts"],
   format: ["esm", "cjs"],
-  dts: true,              // generate .d.ts
+  dts: true,
   outDir: "dist",
-  clean: true,            // clean dist before building
+  clean: true,
   external: [
     "react",
     "react-dom",
     "next",
     "next/link",
+    "next/navigation",
+    "next/image",
     "@carbon/react",
     "@carbon/icons-react",
     "@carbon/styles",
@@ -26,3 +28,4 @@ export default defineConfig({
     "wicg-inert"
   ]
 });
+
