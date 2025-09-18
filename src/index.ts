@@ -25,24 +25,26 @@ export {
 } from '@carbon/pictograms-react';
 
 // Import specific items from @carbon/styles instead of export *
-import { 
-  theme, 
-  tokens, 
-  spacing, 
-  layout, 
-  type, 
-  motion,
-  // Add other specific exports you need
-} from '@carbon/themes';
+// Import all themes as a namespace
+import * as carbonThemes from '@carbon/themes';
+
+// Infer theme type from the runtime export itself
+export type CarbonTheme = typeof carbonThemes[keyof typeof carbonThemes];
 
 export const carbonStyles = {
-  theme,
-  tokens, 
-  spacing,
-  layout,
-  type,
-  motion
+  themes: carbonThemes,
 };
+/**
+ * Will be consummed:
+ * ---------
+ * carbonStyles.themes.g10
+ * carbonStyles.themes.g90
+ * carbonStyles.themes.white
+ * carbonStyles.themes.g100
+ */
+
+
+
 
 // React & Next.js - Don't re-export default imports this way
 // Instead, import them normally or use named exports
