@@ -20,7 +20,8 @@
   "files": [
     "dist",
     "src/styles",
-    "tsup.shared.js"
+    "tsup.shared.js",
+    "tsup.shared.d.ts"
   ],
   "scripts": {
     "build": "tsup src/index.ts --dts --format esm,cjs --out-dir dist",
