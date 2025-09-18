@@ -11,6 +11,7 @@ export default defineConfig({
     "react",
     "react-dom",
     "next",
+    "next/link",
     "@carbon/react",
     "@carbon/icons-react",
     "@carbon/styles",
