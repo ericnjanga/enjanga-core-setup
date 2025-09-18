@@ -10,10 +10,15 @@
       "import": "./dist/index.mjs",
       "require": "./dist/index.js",
       "types": "./dist/index.d.ts"
+    },
+    "./styles": {
+      "sass": "./src/styles/index.scss",
+      "default": "./src/styles/index.scss"
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "src/styles"
   ],
   "scripts": {
     "build": "tsup src/index.ts --dts --format esm,cjs --out-dir dist",
@@ -99,5 +104,8 @@
     "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
-  "sideEffects": false
+  "sideEffects": [
+    "**/*.css",
+    "**/*.scss"
+  ]
 }
