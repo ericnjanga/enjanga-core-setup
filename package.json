@@ -7,33 +7,39 @@
   "types": "dist/index.d.ts",
   "style": "src/styles/index.scss",
   "exports": {
-    ".": {
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js",
-      "types": "./dist/index.d.ts"
-    },
-    "./next": {
-      "import": "./dist/next.mjs",
-      "require": "./dist/next.js",
-      "types": "./dist/next.d.ts"
-    },
-    "./styles": {
-      "sass": "./src/styles/index.scss",
-      "default": "./src/styles/index.scss"
-    },
-    "./tsup.shared.js": {
-      "import": "./tsup.shared.js",
-      "require": "./tsup.shared.js"
-    }
+  ".": {
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.js",
+    "types": "./dist/index.d.ts"
   },
+  "./next": {
+    "import": "./dist/next.mjs",
+    "require": "./dist/next.js",
+    "types": "./dist/next.d.ts"
+  },
+  "./styles": {
+    "sass": "./src/styles/index.scss",
+    "default": "./src/styles/index.scss"
+  },
+  "./carbon-css": {
+    "import": "./dist/styles.min.css",
+    "require": "./dist/styles.min.css"
+  },
+  "./tsup.shared.js": {
+    "import": "./tsup.shared.js",
+    "require": "./tsup.shared.js"
+  }
+},
   "files": [
     "dist",
     "src/styles",
     "tsup.shared.js",
-    "tsup.shared.d.ts"
+    "tsup.shared.d.ts",
+    "dist/styles.min.css"
   ],
   "scripts": {
-    "build": "tsup",
+    "build": "tsup && npm run copy-carbon-css",
+    "copy-carbon-css": "cp node_modules/@carbon/styles/css/styles.min.css dist/styles.min.css",
     "dev": "tsup --watch",
     "type-check": "tsc --noEmit",
     "prepublishOnly": "npm run build && npm run type-check",
