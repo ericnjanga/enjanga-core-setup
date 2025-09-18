@@ -15,6 +15,10 @@
     "./styles": {
       "sass": "./src/styles/index.scss",
       "default": "./src/styles/index.scss"
+    },
+    "./tsup.shared.js": {
+      "import": "./tsup.shared.js",
+      "require": "./tsup.shared.js"
     }
   },
   "files": [
