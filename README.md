@@ -1,4 +1,4 @@
-# @enjanga-com/core-setup 🎯
+# enjanga-core-setup 🎯
 
 **A unified dependency management system for the Enjanga ecosystem**
 
