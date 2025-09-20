@@ -35,7 +35,8 @@
     "src/styles",
     "tsup.shared.js",
     "tsup.shared.d.ts",
-    "dist/styles.min.css"
+    "dist/styles.min.css",
+    "styles.scss"
   ],
   "scripts": {
     "build": "tsup && npm run copy-carbon-css",
