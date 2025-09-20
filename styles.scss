@@ -1,3 +1,9 @@
-
-
+// This file exists to provide a single entry point for Sass consumers.
+// It allows other packages (like enjanga-components-library) to do:
+//   @use 'enjanga-core-setup/styles' as core;
+// without Sass failing to resolve the path. It simply forwards everything
+// from ./src/styles/index.scss.
+//
+// NOTE: Treat this file as the *public Sass API* for enjanga-core-setup.
+// Internal file paths may change, but this entry point should remain stable.
 @forward "./src/styles/index.scss";
