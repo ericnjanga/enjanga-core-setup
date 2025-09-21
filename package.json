@@ -1,7 +1,7 @@
 {
   "name": "enjanga-core-setup",
   "version": "1.0.19",
-  "description": "Complete Carbon Design System dependency bundle with all required peers and utilities",
+  "description": "Unified dependency manager for all Enjanga projects. Bundles the full Carbon Design System with required peer dependencies and utilities.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
