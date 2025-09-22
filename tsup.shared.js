@@ -18,6 +18,7 @@ module.exports = {
     "@tanstack/react-query-devtools",
     "@contentful/rich-text-types",
     "smoothscroll-polyfill",
-    "wicg-inert"
+    "wicg-inert",
+    "react-is"
   ]
 };
