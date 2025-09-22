@@ -45,7 +45,8 @@
     "type-check": "tsc --noEmit",
     "prepublishOnly": "npm run build && npm run type-check",
     "lint": "eslint src --ext .ts,.tsx",
-    "clean": "rm -rf dist",
+    "clean": "rm -rf node_modules dist && yarn cache clean && yarn install",
+    "clean:hard": "rm -rf node_modules dist yarn.lock && yarn cache clean && yarn install",
     "release": "yarn build && npm version patch && npm publish"
   },
   "dependencies": {
