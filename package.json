@@ -47,7 +47,7 @@
     "lint": "eslint src --ext .ts,.tsx",
     "clean": "rm -rf node_modules dist && yarn cache clean && yarn install",
     "clean:hard": "rm -rf node_modules dist yarn.lock && yarn cache clean && yarn install",
-    "release": "yarn build && npm version patch && npm publish"
+    "release": "yarn clean:hard && yarn build && npm version patch && npm publish"
   },
   "dependencies": {
     "@carbon/icons-react": "^11.67.0",
