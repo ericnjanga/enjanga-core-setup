@@ -4,7 +4,11 @@ import { defineConfig } from "tsup";
 export default defineConfig({
   entry: ["src/index.ts", "src/next.ts"],
   format: ["esm", "cjs"],
-  dts: true,
+  dts: {
+    compilerOptions: {
+      skipLibCheck: true
+    }
+  },
   outDir: "dist",
   clean: true,
   external: [
@@ -28,4 +32,3 @@ export default defineConfig({
     "wicg-inert"
   ]
 });
-
