@@ -32,15 +32,18 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 var next_exports = {};
 __export(next_exports, {
   Image: () => import_image.default,
-  Link: () => import_link.default
+  Link: () => import_link.default,
+  usePathname: () => import_navigation.usePathname
 });
 module.exports = __toCommonJS(next_exports);
 var import_link = __toESM(require("next/link"));
 var import_image = __toESM(require("next/image"));
+var import_navigation = require("next/navigation");
 __reExport(next_exports, require("next/navigation"), module.exports);
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   Image,
   Link,
+  usePathname,
   ...require("next/navigation")
 });
