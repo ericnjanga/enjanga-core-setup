@@ -33,7 +33,8 @@ var next_exports = {};
 __export(next_exports, {
   Image: () => import_image.default,
   Link: () => import_link.default,
-  usePathname: () => import_navigation.usePathname
+  usePathname: () => import_navigation.usePathname,
+  useSearchParams: () => import_navigation.useSearchParams
 });
 module.exports = __toCommonJS(next_exports);
 var import_link = __toESM(require("next/link"));
@@ -45,5 +46,6 @@ __reExport(next_exports, require("next/navigation"), module.exports);
   Image,
   Link,
   usePathname,
+  useSearchParams,
   ...require("next/navigation")
 });
