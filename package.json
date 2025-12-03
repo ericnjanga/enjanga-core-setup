@@ -42,8 +42,11 @@
     "styles.scss"
   ],
   "scripts": {
-    "build": "tsup && npm run copy-carbon-css",
+    "build": "tsup && npm run build-css",
+    "build-css": "npm run copy-carbon-css && npm run build-carbon-css-no-fonts",
     "copy-carbon-css": "cp node_modules/@carbon/styles/css/styles.min.css dist/styles.min.css",
+    "build-carbon-css-no-fonts": "sass --load-path=node_modules src/styles/index-no-fonts.scss dist/styles-no-fonts.min.css --style=compressed --no-source-map",
+
     "dev": "tsup --watch",
     "type-check": "tsc --noEmit",
     "prepublishOnly": "npm run build && npm run type-check",
@@ -64,7 +67,7 @@
     "carbon-components": "^10.58.15",
     "clsx": "^2.1.1",
     "enjanga-components-library": "^1.0.12",
-    "sass": "^1.89.2",
+    "sass": "^1.94.2",
     "smoothscroll-polyfill": "^0.4.4",
     "wicg-inert": "^3.1.3"
   },
