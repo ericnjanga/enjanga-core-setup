@@ -1,0 +1,19 @@
+
+// 1. Token / layout layers (keep these)
+$css--font-face: false;
+
+@use "@carbon/styles/scss/theme";
+@use "@carbon/styles/scss/colors";
+@use "@carbon/styles/scss/spacing";
+@use "@carbon/styles/scss/grid";
+@use "@carbon/styles/scss/layer";
+@use "@carbon/styles/scss/motion";
+@use "@carbon/styles/scss/breakpoint";
+
+
+// 2. Only the components you actually wrap in enjanga-components-library
+@use "@carbon/styles/scss/components/modal";
+@use "@carbon/styles/scss/components/tabs";
+@use "@carbon/styles/scss/components/tile";
+@use "@carbon/styles/scss/components/button";
+@use "@carbon/styles/scss/components/ui-shell";

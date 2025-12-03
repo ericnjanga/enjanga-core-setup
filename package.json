@@ -49,7 +49,7 @@
     "build": "tsup && npm run build-css",
     "build-css": "npm run copy-carbon-css && npm run build-carbon-css-no-fonts",
     "copy-carbon-css": "cp node_modules/@carbon/styles/css/styles.min.css dist/styles.min.css",
-    "build-carbon-css-no-fonts": "sass --load-path=node_modules src/styles/carbon-no-fonts.scss dist/styles-no-fonts.min.css --style=compressed --no-source-map",
+    "build-carbon-css-no-fonts": "sass --load-path=node_modules src/styles/carbon-no-fonts-minimal.scss dist/styles-no-fonts.min.css --style=compressed --no-source-map",
     "dev": "tsup --watch",
     "type-check": "tsc --noEmit",
     "prepublishOnly": "npm run build && npm run type-check",
