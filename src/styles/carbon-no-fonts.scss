@@ -1,0 +1,6 @@
+// Disable Carbon's @font-face rules
+$css--font-face: false;
+
+// Pull in the full Carbon CSS bundle (components, layout, etc.)
+// but *without* IBM Plex font-face declarations
+@import '@carbon/styles';
