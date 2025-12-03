@@ -12,19 +12,23 @@
       "require": "./dist/index.js",
       "types": "./dist/index.d.ts"
     },
-    "./next": {
-      "import": "./dist/next.mjs",
-      "require": "./dist/next.js",
-      "types": "./dist/next.d.ts"
-    },
     "./styles": {
+      "sass": "./src/styles/index-no-fonts.scss",
+      "default": "./src/styles/index-no-fonts.scss"
+    },
+    "./styles-with-fonts": {
       "sass": "./src/styles/index.scss",
       "default": "./src/styles/index.scss"
     },
     "./carbon-css": {
+      "import": "./dist/styles-no-fonts.min.css",
+      "require": "./dist/styles-no-fonts.min.css"
+    },
+    "./carbon-css-with-fonts": {
       "import": "./dist/styles.min.css",
       "require": "./dist/styles.min.css"
     },
+
     "./tsup.shared.js": {
       "import": "./tsup.shared.js",
       "require": "./tsup.shared.js"

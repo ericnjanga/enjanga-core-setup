@@ -6,4 +6,5 @@
 //
 // NOTE: Treat this file as the *public Sass API* for enjanga-core-setup.
 // Internal file paths may change, but this entry point should remain stable.
-@forward "./src/styles/index.scss";
+@forward "./src/styles/index-no-fonts.scss";
+
