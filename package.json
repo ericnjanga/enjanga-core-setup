@@ -1,6 +1,6 @@
 {
   "name": "enjanga-core-setup",
-  "version": "1.0.22",
+  "version": "1.0.23",
   "description": "Unified dependency manager for all Enjanga projects. Bundles the full Carbon Design System with required peer dependencies and utilities.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -28,7 +28,6 @@
       "import": "./dist/styles.min.css",
       "require": "./dist/styles.min.css"
     },
-
     "./tsup.shared.js": {
       "import": "./tsup.shared.js",
       "require": "./tsup.shared.js"
