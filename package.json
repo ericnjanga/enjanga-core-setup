@@ -4,13 +4,16 @@
   "description": "Unified dependency manager for all Enjanga projects. Bundles the full Carbon Design System with required peer dependencies and utilities.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
   "style": "src/styles/index.scss",
   "exports": {
     ".": {
       "import": "./dist/index.mjs",
-      "require": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.js"
+    },
+    "./next": {
+      "import": "./dist/next.mjs",
+      "require": "./dist/next.js",
+      "types": "./dist/next.d.ts"
     },
     "./styles": {
       "sass": "./src/styles/index-no-fonts.scss",
@@ -33,6 +36,7 @@
       "require": "./tsup.shared.js"
     }
   },
+  "types": "dist/index.d.ts",
   "files": [
     "dist",
     "src/styles",
