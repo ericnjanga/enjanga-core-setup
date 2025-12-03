@@ -1,6 +1,6 @@
 {
   "name": "enjanga-core-setup",
-  "version": "1.0.25",
+  "version": "1.0.26",
   "description": "Unified dependency manager for all Enjanga projects. Bundles the full Carbon Design System with required peer dependencies and utilities.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
