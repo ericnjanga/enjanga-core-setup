@@ -1,6 +1,6 @@
 {
   "name": "enjanga-core-setup",
-  "version": "1.0.23",
+  "version": "1.0.24",
   "description": "Unified dependency manager for all Enjanga projects. Bundles the full Carbon Design System with required peer dependencies and utilities.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -46,7 +46,6 @@
     "build-css": "npm run copy-carbon-css && npm run build-carbon-css-no-fonts",
     "copy-carbon-css": "cp node_modules/@carbon/styles/css/styles.min.css dist/styles.min.css",
     "build-carbon-css-no-fonts": "sass --load-path=node_modules src/styles/index-no-fonts.scss dist/styles-no-fonts.min.css --style=compressed --no-source-map",
-
     "dev": "tsup --watch",
     "type-check": "tsc --noEmit",
     "prepublishOnly": "npm run build && npm run type-check",
