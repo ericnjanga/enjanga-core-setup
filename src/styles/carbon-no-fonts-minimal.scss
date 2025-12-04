@@ -2,6 +2,9 @@
 // 1. Token / layout layers (keep these)
 $css--font-face: false;
 
+// 2) Emit the CSS reset (removes body margin, list styles, etc.)
+@use '@carbon/styles/scss/reset';
+
 @use "@carbon/styles/scss/theme";
 @use "@carbon/styles/scss/colors";
 @use "@carbon/styles/scss/spacing";
