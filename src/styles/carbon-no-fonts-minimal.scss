@@ -1,10 +1,15 @@
 
-// 1. Token / layout layers (keep these)
-$css--font-face: false;
+// 1. Disable Carbon font-face declarations
+@use '@carbon/styles/scss/config' with (
+  $css--font-face: false
+);
+
 
 // 2) Emit the CSS reset (removes body margin, list styles, etc.)
 @use '@carbon/styles/scss/reset';
 
+
+// 3. Token, layout layers, ...
 @use "@carbon/styles/scss/theme";
 @use "@carbon/styles/scss/colors";
 @use "@carbon/styles/scss/spacing";
@@ -14,7 +19,7 @@ $css--font-face: false;
 @use "@carbon/styles/scss/breakpoint";
 
 
-// 2. Only the components you actually wrap in enjanga-components-library
+// 3. Only the components enjanga-components-libr*** need
 @use "@carbon/styles/scss/components/modal";
 @use "@carbon/styles/scss/components/tabs";
 @use "@carbon/styles/scss/components/tile";
