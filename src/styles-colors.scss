@@ -1,4 +1,4 @@
 /**
  * Forwarding this file, so that --load-path=node_modules can locate it (build process on a consuming project)
 */
-@forward './src/styles/index-colors.scss';
+@forward './styles/index-colors.scss';
