@@ -55,6 +55,7 @@
   "types": "dist/index.d.ts",
   "files": [
     "dist",
+    "src/*.scss",
     "src/styles",
     "tsup.shared.js",
     "tsup.shared.d.ts",
