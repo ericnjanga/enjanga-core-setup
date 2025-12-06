@@ -1,0 +1,5 @@
+/**
+ * Only forwarding this Carbon Design Token/Utility
+ * (This helps reduce CSS bundle size)
+*/
+@forward '@carbon/styles/scss/breakpoint';

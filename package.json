@@ -23,6 +23,22 @@
       "sass": "./src/styles/index.scss",
       "default": "./src/styles/index.scss"
     },
+    "./styles-breakpoint": {
+      "sass": "./src/styles/index-breakpoint.scss",
+      "default": "./src/styles/index-breakpoint.scss"
+    },
+    "./styles-colors": {
+      "sass": "./src/styles/index-colors.scss",
+      "default": "./src/styles/index-colors.scss"
+    },
+    "./styles-spacing": {
+      "sass": "./src/styles/index-spacing.scss",
+      "default": "./src/styles/index-spacing.scss"
+    },
+    "./styles-type": {
+      "sass": "./src/styles/index-type.scss",
+      "default": "./src/styles/index-type.scss"
+    },
     "./carbon-css": {
       "import": "./dist/styles-no-fonts.min.css",
       "require": "./dist/styles-no-fonts.min.css"
