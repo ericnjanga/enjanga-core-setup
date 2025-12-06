@@ -24,20 +24,20 @@
       "default": "./src/styles/index.scss"
     },
     "./styles-breakpoint": {
-      "sass": "./src/styles-breakpoint.scss",
-      "default": "./src/styles-breakpoint.scss"
+      "sass": "./styles-breakpoint.scss",
+      "default": "./styles-breakpoint.scss"
     },
     "./styles-colors": {
-      "sass": "./src/styles-colors.scss",
-      "default": "./src/styles-colors.scss"
+      "sass": "./styles-colors.scss",
+      "default": "./styles-colors.scss"
     },
     "./styles-spacing": {
-      "sass": "./src/styles-spacing.scss",
-      "default": "./src/styles-spacing.scss"
+      "sass": "./styles-spacing.scss",
+      "default": "./styles-spacing.scss"
     },
     "./styles-type": {
-      "sass": "./src/styles-type.scss",
-      "default": "./src/styles-type.scss"
+      "sass": "./styles-type.scss",
+      "default": "./styles-type.scss"
     },
     "./carbon-css": {
       "import": "./dist/styles-no-fonts.min.css",
@@ -55,7 +55,7 @@
   "types": "dist/index.d.ts",
   "files": [
     "dist",
-    "src/*.scss",
+    "*.scss",
     "src/styles",
     "tsup.shared.js",
     "tsup.shared.d.ts",
