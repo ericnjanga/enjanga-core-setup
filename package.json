@@ -1,7 +1,7 @@
 {
   "name": "enjanga-core-setup",
   "version": "1.0.41",
-  "description": "Unified dependency manager for all Enjanga projects. Bundles the full Carbon Design System with required peer dependencies and utilities.",
+  "description": "Shared Carbon foundations, Sass utilities, and theme assets for Enjanga interfaces.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "style": "src/styles/index.scss",
@@ -11,9 +11,9 @@
       "require": "./dist/index.js"
     },
     "./next": {
+      "types": "./dist/next.d.ts",
       "import": "./dist/next.mjs",
-      "require": "./dist/next.js",
-      "types": "./dist/next.d.ts"
+      "require": "./dist/next.js"
     },
     "./styles": {
       "sass": "./src/styles/index-no-fonts.scss",
@@ -46,10 +46,6 @@
     "./carbon-css-with-fonts": {
       "import": "./dist/styles.min.css",
       "require": "./dist/styles.min.css"
-    },
-    "./tsup.shared.js": {
-      "import": "./tsup.shared.js",
-      "require": "./tsup.shared.js"
     }
   },
   "types": "dist/index.d.ts",
@@ -57,8 +53,6 @@
     "dist",
     "*.scss",
     "src/styles",
-    "tsup.shared.js",
-    "tsup.shared.d.ts",
     "dist/styles.min.css",
     "styles.scss"
   ],
@@ -71,40 +65,24 @@
     "type-check": "tsc --noEmit",
     "prepublishOnly": "npm run build && npm run type-check",
     "lint": "eslint src --ext .ts,.tsx",
-    "clean": "rm -rf node_modules dist && yarn cache clean && yarn install",
-    "clean:hard": "rm -rf node_modules dist yarn.lock && yarn cache clean && yarn install",
-    "release": "yarn clean:hard && yarn build && npm version patch && npm publish"
+    "clean": "rm -rf dist",
+    "release": "npm version patch && npm publish"
   },
   "dependencies": {
     "@carbon/icons-react": "^11.67.0",
-    "@carbon/pictograms-react": "^11.67.0",
     "@carbon/react": "^1.91.0",
     "@carbon/styles": "^1.90.0",
-    "@contentful/rich-text-types": "^17.1.0",
-    "@tanstack/react-query": "^5.83.0",
-    "@tanstack/react-query-devtools": "^5.83.0",
-    "axios": "^1.11.0",
-    "carbon-components": "^10.58.15",
-    "clsx": "^2.1.1",
-    "enjanga-components-library": "^1.0.12",
-    "sass": "^1.94.2",
-    "smoothscroll-polyfill": "^0.4.4",
-    "wicg-inert": "^3.1.3"
+    "@carbon/themes": "^11.80.0",
+    "sass": "^1.94.2"
   },
   "devDependencies": {
-    "@types/carbon__pictograms-react": "^11.89.0",
-    "@types/carbon__themes": "^0.0.3",
     "@types/node": "^24.5.2",
     "@types/react": "^19.1.13",
     "@types/react-dom": "^19.1.9",
-    "@types/smoothscroll-polyfill": "^0.3.4",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
     "eslint": "^8.45.0",
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-react": "^7.33.0",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "prettier": "^2.8.8",
+    "next": "^15.5.7",
     "tsup": "^8.5.0",
     "typescript": "^5.0.0"
   },
@@ -119,9 +97,10 @@
     }
   },
   "engines": {
-    "node": ">=18.0.0",
-    "npm": ">=8.0.0"
+    "node": ">=22.0.0",
+    "npm": ">=9.0.0"
   },
+  "packageManager": "npm@9.7.1",
   "browserslist": [
     ">0.2%",
     "not dead",
@@ -134,9 +113,7 @@
     "react",
     "nextjs",
     "components",
-    "ibm",
-    "react-query",
-    "axios"
+    "ibm"
   ],
   "author": "Enjanga <contact@enjanga.com>",
   "license": "Apache-2.0",
