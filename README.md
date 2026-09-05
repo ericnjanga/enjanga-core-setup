@@ -49,6 +49,31 @@ import 'enjanga-core-setup/carbon-css-no-fonts';
 // or: import 'enjanga-core-setup/carbon-css-with-fonts';
 ```
 
+Load the Enjanga typeface and typography token once at an application root:
+
+```ts
+import 'enjanga-core-setup/typography.css';
+```
+
+Applications that load Mona Sans themselves can import only the shared custom
+property:
+
+```ts
+import 'enjanga-core-setup/typography-tokens.css';
+```
+
+Both entries define `--enj-font-family-sans`; the full entry also ships and
+registers the Mona Sans variable font.
+
+Shared component color and state tokens are available separately:
+
+```ts
+import 'enjanga-core-setup/design-tokens.css';
+```
+
+This entry includes light and dark Navbar tokens. Set `data-theme="dark"` on
+the document root to activate the dark values.
+
 ## Development
 
 ```bash

@@ -46,7 +46,10 @@
     "./carbon-css-with-fonts": {
       "import": "./dist/styles.min.css",
       "require": "./dist/styles.min.css"
-    }
+    },
+    "./typography.css": "./dist/typography.css",
+    "./typography-tokens.css": "./dist/typography-tokens.css",
+    "./design-tokens.css": "./dist/design-tokens.css"
   },
   "types": "dist/index.d.ts",
   "files": [
@@ -58,9 +61,10 @@
   ],
   "scripts": {
     "build": "tsup && npm run build-css",
-    "build-css": "npm run copy-carbon-css && npm run build-carbon-css-no-fonts",
+    "build-css": "npm run copy-carbon-css && npm run build-carbon-css-no-fonts && npm run build-typography",
     "copy-carbon-css": "cp node_modules/@carbon/styles/css/styles.min.css dist/styles.min.css",
     "build-carbon-css-no-fonts": "sass --load-path=node_modules src/styles/carbon-no-fonts-minimal.scss dist/styles-no-fonts.min.css --style=compressed --no-source-map",
+    "build-typography": "mkdir -p dist/fonts && sass src/styles/typography.scss dist/typography.css --style=compressed --no-source-map && sass src/styles/typography-tokens.scss dist/typography-tokens.css --style=compressed --no-source-map && sass src/styles/design-tokens.scss dist/design-tokens.css --style=compressed --no-source-map && cp src/assets/fonts/MonaSansVF.woff2 dist/fonts/MonaSansVF.woff2",
     "dev": "tsup --watch",
     "type-check": "tsc --noEmit",
     "prepublishOnly": "npm run build && npm run type-check",

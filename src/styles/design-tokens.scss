@@ -1,0 +1,51 @@
+@use './typography-tokens';
+
+:root {
+  --enj-navbar-background: #f4f7fb;
+  --enj-navbar-foreground: #111827;
+  --enj-navbar-active-background: #111827;
+  --enj-navbar-active-foreground: #fff;
+  --enj-navbar-accent: #f81c9a;
+  --enj-navbar-border: #d9e1eb;
+  --enj-navbar-overlay: rgb(15 23 42 / 45%);
+  --enj-navbar-shadow: rgb(15 23 42 / 20%);
+}
+
+:root[data-theme='dark'] {
+  --enj-navbar-background: #0d1726;
+  --enj-navbar-foreground: #dbeafe;
+  --enj-navbar-active-background: #dbeafe;
+  --enj-navbar-active-foreground: #0d1726;
+  --enj-navbar-accent: #f81c9a;
+  --enj-navbar-border: rgb(226 232 240 / 18%);
+  --enj-navbar-overlay: rgb(0 0 0 / 62%);
+  --enj-navbar-shadow: rgb(0 0 0 / 48%);
+}
+
+// Button foundations from Figma 3329:4078. Interaction states extend the design.
+:root {
+  --enj-button-primary-background: #4342ea;
+  --enj-button-primary-foreground: #fff;
+  --enj-button-secondary-background: #314255;
+  --enj-button-secondary-foreground: #fff;
+  --enj-button-tertiary-background: #d2d9e1;
+  --enj-button-tertiary-foreground: #314255;
+  --enj-button-tertiary-border: #314255;
+  --enj-button-font-size: 18px;
+  --enj-button-font-weight: 600;
+  --enj-button-line-height: 22px;
+  --enj-button-letter-spacing: 0.16px;
+  --enj-button-padding-block: 10px;
+  --enj-button-padding-inline: 25px;
+  --enj-button-icon-padding-inline: 15px;
+  --enj-button-gap: 10px;
+  --enj-button-radius: 30px;
+  --enj-button-border-width: 3px;
+  --enj-button-icon-size: 18px;
+  --enj-button-focus-color: #4342ea;
+  --enj-button-focus-width: 3px;
+  --enj-button-focus-offset: 3px;
+  --enj-button-hover-brightness: 0.92;
+  --enj-button-active-brightness: 0.84;
+  --enj-button-disabled-opacity: 0.5;
+}
