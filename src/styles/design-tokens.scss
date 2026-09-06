@@ -97,7 +97,7 @@
 // Case studies page and video dialog shared by Storybook and consuming apps.
 :root {
   --enj-case-study-text-max-width: 880px;
-  --enj-case-study-dialog-width: 1024px;
+  --enj-case-study-dialog-width: 859px;
   --enj-case-study-dialog-padding: 16px;
   --enj-case-study-dialog-backdrop: rgb(0 0 0 / 80%);
   --enj-case-studies-gutter: 16px;
@@ -142,4 +142,33 @@
   --enj-button-primary-wipe-duration: 500ms;
   --enj-button-primary-motion-easing: cubic-bezier(0.22, 1, 0.36, 1);
   --enj-button-primary-wipe-easing: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+// Video dialog, Figma 3329:4191.
+:root {
+  --enj-case-study-dialog-shadow: 0 20px 34px rgb(0 0 0 / 65%);
+  --enj-case-study-dialog-header-height: 86px;
+  --enj-case-study-dialog-header-padding: 11px 11px 16px 29px;
+  --enj-case-study-dialog-title-size: 25px;
+  --enj-case-study-dialog-title-line-height: 32px;
+  --enj-case-study-dialog-close-size: 56px;
+  --enj-case-study-dialog-video-ratio: 859 / 469;
+  --enj-case-study-dialog-footer-padding: 34px 24px;
+  --enj-case-study-dialog-footer-gap: 24px;
+}
+
+// Shared page introductions, Figma 3361:4437. Outer spacing belongs to the page.
+:root {
+  --enj-page-hero-content-width: 846px;
+  --enj-page-hero-gap: 20px;
+  --enj-page-hero-title-line-height: var(--enj-h1-line-height);
+  --enj-page-hero-description-size: 20px;
+  --enj-page-hero-description-line-height: 30px;
+}
+@include responsive.desktop {
+  :root {
+    --enj-page-hero-title-line-height: 63px;
+    --enj-page-hero-description-size: 24px;
+    --enj-page-hero-description-line-height: 34px;
+  }
 }
