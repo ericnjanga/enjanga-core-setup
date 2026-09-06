@@ -49,7 +49,11 @@
     },
     "./typography.css": "./dist/typography.css",
     "./typography-tokens.css": "./dist/typography-tokens.css",
-    "./design-tokens.css": "./dist/design-tokens.css"
+    "./design-tokens.css": "./dist/design-tokens.css",
+    "./styles-responsive": {
+      "sass": "./styles-responsive.scss",
+      "default": "./styles-responsive.scss"
+    }
   },
   "types": "dist/index.d.ts",
   "files": [

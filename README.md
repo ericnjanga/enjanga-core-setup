@@ -92,3 +92,19 @@ This package intentionally does not re-export React, React DOM, Next.js,
 TanStack Query, Axios, Contentful types, utility libraries, browser polyfills,
 or the Enjanga component library. Keeping those dependencies at their natural
 ownership layer prevents circular dependencies and hidden version coupling.
+
+## Responsive headings and case study cards
+
+Import `enjanga-core-setup/typography.css` for Mona Sans and shared h1–h4 presets.
+Presets apply to semantic headings and `.enj-h1` through `.enj-h4`. Each level owns
+font size, line height, and bottom margin through `--enj-hN-*` tokens. The scale is
+mobile first, with tablet (672px) and desktop (1056px) overrides. Font weight and
+letter spacing are shared. The h2 preset matches the verified Figma case study title: 33/38px on mobile,
+36/44px on tablet, and 40/48px on desktop, with bottom margins of 17/21/25px.
+CaseStudyCard always uses that h2 preset.
+
+`src/styles/typography-tokens.scss` owns the heading scale;
+`src/styles/_headings.scss` applies it. `styles-responsive` exports the core Sass
+breakpoint mixins. `design-tokens.css` supplies card and button visual tokens.
+Run `npm run build-typography` after changing these sources. Component packages
+must consume these tokens rather than duplicate their values.

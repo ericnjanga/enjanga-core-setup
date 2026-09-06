@@ -1,0 +1,12 @@
+// Enjanga responsive boundaries, aligned with Carbon md (672px) and lg (1056px).
+// Keep breakpoint values here so typography and component layouts stay in sync.
+$tablet: 42rem;
+$desktop: 66rem;
+
+@mixin tablet {
+  @media (min-width: $tablet) { @content; }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop) { @content; }
+}

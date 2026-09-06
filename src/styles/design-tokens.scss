@@ -1,4 +1,5 @@
 @use './typography-tokens';
+@use './responsive';
 
 :root {
   --enj-navbar-background: #f4f7fb;
@@ -48,4 +49,47 @@
   --enj-button-hover-brightness: 0.92;
   --enj-button-active-brightness: 0.84;
   --enj-button-disabled-opacity: 0.5;
+}
+
+// Case study card, Figma 3329:4094.
+:root {
+  --enj-case-study-background: #ecf5ff;
+  --enj-case-study-foreground: #314255;
+  --enj-case-study-border-color: #314255;
+  --enj-case-study-border-width: 3px;
+  --enj-case-study-radius: 15px;
+  --enj-case-study-overlay: rgb(0 0 0 / 50%);
+  --enj-case-study-intro-foreground: #fff;
+  --enj-case-study-intro-size: 110px;
+  --enj-case-study-intro-label-width: 105px;
+  --enj-case-study-intro-offset-x: -11px;
+  --enj-case-study-intro-offset-y: -9.5px;
+  --enj-case-study-poster-inset: calc(-1.25% - 3.08px);
+  --enj-case-study-poster-ratio: 1911 / 1070;
+  --enj-case-study-poster-width: 110.27%;
+  --enj-case-study-poster-height: 110.56%;
+  --enj-case-study-poster-left: -2.99%;
+  --enj-case-study-poster-top: -5.68%;
+  --enj-case-study-intro-text-shadow: 1px 1px 0 rgb(0 0 0 / 85%);
+  --enj-case-study-max-width: 1280px;
+  --enj-case-study-columns: minmax(0, 489fr) minmax(0, 712fr);
+  --enj-case-study-media-height: 349px;
+  --enj-case-study-gap: 25px;
+  --enj-case-study-content-padding: 0px;
+  --enj-case-study-action-offset: 7px;
+}
+
+@include responsive.tablet {
+  :root {
+    --enj-case-study-media-height: 469px;
+    --enj-case-study-gap: 40px;
+  }
+}
+
+@include responsive.desktop {
+  :root {
+    --enj-case-study-gap: 79px;
+    --enj-case-study-intro-offset-x: -10.5px;
+    --enj-case-study-content-padding: 76.5px;
+  }
 }

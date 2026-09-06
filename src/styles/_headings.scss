@@ -1,0 +1,12 @@
+// Semantic elements and opt-in classes share the same core-owned presets.
+@for $level from 1 through 4 {
+  h#{$level}, .enj-h#{$level} {
+    font-family: var(--enj-font-family-sans);
+    font-size: var(--enj-h#{$level}-font-size);
+    font-weight: var(--enj-heading-font-weight);
+    line-height: var(--enj-h#{$level}-line-height);
+    letter-spacing: var(--enj-heading-letter-spacing);
+    margin-block-start: 0;
+    margin-block-end: var(--enj-h#{$level}-margin-bottom);
+  }
+}

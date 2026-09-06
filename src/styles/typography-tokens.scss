@@ -1,3 +1,41 @@
+@use 'sass:map';
+@use 'sass:list';
+@use './responsive';
+
+// h2 matches the case study title in Figma 3329:4094 at each viewport.
+// Other levels extend that scale; semantic level and visual presets stay in core.
+$headings: (
+  1: (mobile: (42px, 50px, 25px), tablet: (48px, 56px, 28px), desktop: (54px, 64px, 32px)),
+  2: (mobile: (33px, 38px, 17px), tablet: (36px, 44px, 21px), desktop: (40px, 48px, 25px)),
+  3: (mobile: (33px, 38px, 17px), tablet: (36px, 44px, 21px), desktop: (40px, 48px, 25px)),
+  4: (mobile: (23px, 30px, 13px), tablet: (24px, 32px, 15px), desktop: (25px, 32px, 17px)),
+);
+
+@mixin heading-tokens($size) {
+  @each $level, $presets in $headings {
+    $preset: map.get($presets, $size);
+    --enj-h#{$level}-font-size: #{list.nth($preset, 1)};
+    --enj-h#{$level}-line-height: #{list.nth($preset, 2)};
+    --enj-h#{$level}-margin-bottom: #{list.nth($preset, 3)};
+  }
+}
+
 :root {
   --enj-font-family-sans: 'Mona Sans', Arial, Helvetica, sans-serif;
+  --enj-heading-font-weight: 700;
+  --enj-heading-letter-spacing: 0.16px;
+  --enj-body-font-size: 18px;
+  --enj-body-font-weight: 500;
+  --enj-body-line-height: 28px;
+  --enj-body-letter-spacing: 0.16px;
+  --enj-body-paragraph-spacing: 28px;
+  @include heading-tokens(mobile);
+}
+
+@include responsive.tablet {
+  :root { @include heading-tokens(tablet); }
+}
+
+@include responsive.desktop {
+  :root { @include heading-tokens(desktop); }
 }
