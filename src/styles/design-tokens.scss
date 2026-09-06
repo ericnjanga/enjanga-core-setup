@@ -126,3 +126,20 @@
   --enj-button-secondary-background: #dbeafe;
   --enj-button-secondary-foreground: #0d1726;
 }
+
+// Primary button motion from the portfolio CTA.
+:root {
+  --enj-button-primary-hover-background: #f81c9a;
+  --enj-button-primary-hover-foreground: #fff;
+  --enj-button-primary-shadow: 0 0.45rem 1rem rgb(15 23 42 / 12%);
+  --enj-button-primary-hover-shadow: 0 0.7rem 1.5rem rgb(248 28 154 / 25%);
+  --enj-button-primary-hover-lift: -3px;
+  --enj-button-primary-hover-icon-shift: 0.2rem;
+  --enj-button-primary-wipe-start: -101%;
+  --enj-button-primary-lift-duration: 220ms;
+  --enj-button-primary-color-duration: 260ms;
+  --enj-button-primary-icon-duration: 260ms;
+  --enj-button-primary-wipe-duration: 500ms;
+  --enj-button-primary-motion-easing: cubic-bezier(0.22, 1, 0.36, 1);
+  --enj-button-primary-wipe-easing: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
