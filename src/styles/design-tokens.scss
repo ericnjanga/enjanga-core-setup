@@ -93,3 +93,36 @@
     --enj-case-study-content-padding: 76.5px;
   }
 }
+
+// Case studies page and video dialog shared by Storybook and consuming apps.
+:root {
+  --enj-case-study-text-max-width: 880px;
+  --enj-case-study-dialog-width: 1024px;
+  --enj-case-study-dialog-padding: 16px;
+  --enj-case-study-dialog-backdrop: rgb(0 0 0 / 80%);
+  --enj-case-studies-gutter: 16px;
+  --enj-case-studies-hero-height: auto;
+  --enj-case-studies-hero-padding: 32px 80px;
+  --enj-case-studies-title-width: 736px;
+  --enj-case-studies-list-gap: 80px;
+  --enj-case-studies-bottom-space: 96px;
+}
+@include responsive.tablet {
+  :root { --enj-case-studies-gutter: 32px; }
+}
+@include responsive.desktop {
+  :root {
+    --enj-case-studies-gutter: 80px;
+    --enj-case-studies-hero-height: 288px;
+    --enj-case-studies-hero-padding: 20px 64px;
+    --enj-case-studies-list-gap: 85px;
+    --enj-case-studies-bottom-space: 228px;
+  }
+}
+:root[data-theme='dark'] {
+  --enj-case-study-background: #0d1726;
+  --enj-case-study-foreground: #dbeafe;
+  --enj-case-study-border-color: #dbeafe;
+  --enj-button-secondary-background: #dbeafe;
+  --enj-button-secondary-foreground: #0d1726;
+}
