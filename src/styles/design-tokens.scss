@@ -172,3 +172,33 @@
     --enj-page-hero-description-line-height: 34px;
   }
 }
+
+// Case study detail article — Figma 3349:4321.
+:root {
+  --enj-case-study-page-article-width: 772px;
+  --enj-case-study-page-hero-padding: 32px 80px;
+  --enj-case-study-page-bottom-space: 120px;
+  --enj-case-study-page-block-gap: 24px;
+  --enj-case-study-page-divider-space: 72px;
+  --enj-case-study-page-divider-color: rgb(49 66 85 / 18%);
+  --enj-case-study-page-accent: var(--enj-button-primary-background);
+  --enj-case-study-page-subheading-size: 24px;
+  --enj-case-study-page-subheading-line-height: 32px;
+  --enj-case-study-page-quote-border-width: 11px;
+  --enj-case-study-page-quote-padding: 24px;
+  --enj-case-study-page-quote-background: rgb(67 66 234 / 10%);
+  --enj-case-study-page-quote-size: 22px;
+  --enj-case-study-page-quote-line-height: 34px;
+}
+@include responsive.desktop {
+  :root {
+    --enj-case-study-page-hero-padding: 20px 138px;
+    --enj-case-study-page-subheading-size: 28px;
+    --enj-case-study-page-subheading-line-height: 36px;
+    --enj-case-study-page-quote-padding: 24px 24px 24px 50px;
+  }
+}
+:root[data-theme='dark'] {
+  --enj-case-study-page-divider-color: rgb(219 234 254 / 24%);
+  --enj-case-study-page-quote-background: rgb(67 66 234 / 20%);
+}
