@@ -10,3 +10,9 @@ $desktop: 66rem;
 @mixin desktop {
   @media (min-width: $desktop) { @content; }
 }
+
+// Preserve the navigation and compact-dialog layout boundaries.
+$navigation-collapsed: 56.25rem;
+$compact: 33.75rem;
+@mixin navigation-collapsed { @media (max-width: $navigation-collapsed) { @content; } }
+@mixin compact { @media (max-width: $compact) { @content; } }

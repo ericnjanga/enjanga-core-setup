@@ -44,8 +44,8 @@
   --enj-button-border-width: 3px;
   --enj-button-icon-size: 18px;
   --enj-button-focus-color: #4342ea;
-  --enj-button-focus-width: 3px;
-  --enj-button-focus-offset: 3px;
+  --enj-button-focus-width: var(--enj-focus-width);
+  --enj-button-focus-offset: var(--enj-focus-offset);
   --enj-button-hover-brightness: 0.92;
   --enj-button-active-brightness: 0.84;
   --enj-button-disabled-opacity: 0.5;
@@ -201,4 +201,64 @@
 :root[data-theme='dark'] {
   --enj-case-study-page-divider-color: rgb(219 234 254 / 24%);
   --enj-case-study-page-quote-background: rgb(67 66 234 / 20%);
+}
+
+// Embedded walkthrough modal — Figma 3385:4488.
+:root {
+  --enj-walkthrough-dialog-header-height: 122px;
+  --enj-walkthrough-dialog-backdrop: rgb(0 0 0 / 60%);
+  --enj-walkthrough-dialog-video-ratio: 853 / 431;
+}
+
+// Shared component dimensions, focus treatment and motion.
+:root {
+  --enj-navbar-height: 6.25rem;
+  --enj-navbar-brand-size: 1.875rem;
+  --enj-navbar-brand-weight: 800;
+  --enj-navbar-menu-gap: .625rem;
+  --enj-navbar-action-gap: .5rem;
+  --enj-navbar-action-spacing: .75rem;
+  --enj-navbar-radius: 999px;
+  --enj-navbar-link-padding: .4375rem 1rem;
+  --enj-navbar-link-size: 1.125rem;
+  --enj-navbar-link-weight: 600;
+  --enj-navbar-link-line-height: 1.22;
+  --enj-navbar-transition-duration: 160ms;
+  --enj-navbar-hover-foreground: #fff;
+  --enj-navbar-disabled-opacity: .45;
+  --enj-navbar-control-size: 2.75rem;
+  --enj-navbar-icon-size: 1.5rem;
+  --enj-navbar-icon-stroke-width: 1.75;
+  --enj-navbar-drawer-width: 86vw;
+  --enj-navbar-drawer-max-width: 23rem;
+  --enj-navbar-drawer-links-offset: 2.5rem;
+  --enj-case-study-dialog-viewport-clearance: 2rem;
+  --enj-case-study-dialog-header-gap: 1rem;
+  --enj-video-background: #000;
+  --enj-case-study-dialog-compact-header-padding: 12px 8px 16px 16px;
+  --enj-case-study-dialog-compact-footer-padding: 20px 16px;
+  --enj-case-study-dialog-compact-title-size: 20px;
+  --enj-case-study-dialog-compact-title-line-height: 28px;
+  --enj-case-study-dialog-compact-footer-gap: 12px;
+  --enj-focus-offset-tight: 2px;
+  --enj-border-width-thin: 1px;
+  --enj-focus-width: 3px;
+  --enj-focus-width-thin: 2px;
+  --enj-focus-offset: 3px;
+  --enj-focus-offset-media: 5px;
+  --enj-motion-easing-standard: ease;
+  --enj-link-underline-offset: .15em;
+  --enj-navbar-gutter: 2rem;
+  --enj-navbar-max-width: 80rem;
+  --enj-navbar-compact-gutter: 1rem;
+  --enj-navbar-compact-height: 5rem;
+  --enj-navbar-compact-brand-size: 1.5rem;
+  --enj-navbar-drawer-padding: 1.5rem;
+  --enj-navbar-drawer-link-padding: .75rem 1rem;
+  --enj-navbar-drawer-shadow: -1rem 0 2rem var(--enj-navbar-shadow);
+}
+
+:root {
+  --enj-case-study-hover-duration: 180ms;
+  --enj-case-study-hover-overlay: rgb(0 0 0 / 35%);
 }
