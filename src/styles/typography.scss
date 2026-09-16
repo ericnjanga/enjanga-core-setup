@@ -9,3 +9,13 @@
   font-stretch: 75% 125%;
   font-display: swap;
 }
+
+// Ordinary paragraphs inherit core body sizing; component-specific text
+// (for example hero descriptions and blockquotes) can retain its own scale.
+:where(body) {
+  font-size: var(--enj-body-font-size);
+}
+
+:where(p) {
+  font-size: inherit;
+}
