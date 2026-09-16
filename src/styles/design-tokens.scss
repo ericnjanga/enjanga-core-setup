@@ -104,8 +104,9 @@
   --enj-case-studies-hero-height: auto;
   --enj-case-studies-hero-padding: 32px 80px;
   --enj-case-studies-title-width: 736px;
-  --enj-case-studies-list-gap: 80px;
-  --enj-case-studies-bottom-space: 96px;
+  --enj-case-studies-list-gap: clamp(6rem, 19.444vw, 17.5rem);
+  --enj-case-studies-divider-color: var(--enj-case-study-page-divider-color);
+  --enj-case-studies-bottom-space: clamp(6rem, 15vw, 13.5rem);
 }
 @include responsive.tablet {
   :root { --enj-case-studies-gutter: 32px; }
@@ -115,8 +116,6 @@
     --enj-case-studies-gutter: 80px;
     --enj-case-studies-hero-height: 288px;
     --enj-case-studies-hero-padding: 20px 64px;
-    --enj-case-studies-list-gap: 85px;
-    --enj-case-studies-bottom-space: 228px;
   }
 }
 :root[data-theme='dark'] {
@@ -261,4 +260,19 @@
 :root {
   --enj-case-study-hover-duration: 180ms;
   --enj-case-study-hover-overlay: rgb(0 0 0 / 35%);
+}
+
+// Home section rhythm — Figma 3329:2 at 1440px; compact screens retain breathing room.
+:root {
+  --enj-home-hero-height: clamp(22rem, 27.778vw, 25rem);
+  --enj-home-hero-top-space: clamp(3rem, 8vw, 7rem);
+  --enj-home-hero-bottom-space: clamp(6rem, 27.778vw, 25rem);
+  --enj-home-expertise-item-gap: clamp(2.5rem, 4.444vw, 4rem);
+  --enj-home-expertise-list-top-space: clamp(1.75rem, 3.125vw, 2.8125rem);
+  --enj-home-expertise-list-bottom-space: clamp(2.25rem, 3.472vw, 3.125rem);
+  --enj-home-expertise-divider-width: 20.125rem;
+  --enj-home-expertise-divider-color: var(--enj-case-study-page-divider-color);
+  --enj-home-expertise-height: clamp(37.5rem, 54.167vw, 48.75rem);
+  --enj-home-about-top-space: clamp(6rem, 24.444vw, 22rem);
+  --enj-home-about-bottom-space: clamp(6rem, 19.444vw, 17.5rem);
 }

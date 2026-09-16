@@ -10,7 +10,7 @@ $h3-font-size: clamp(1.6rem, 1.55rem + 0.2vw, 1.7rem);
 $headings: (
   1: (mobile: (42px, 50px, 25px), tablet: (48px, 56px, 28px), desktop: (54px, 64px, 32px)),
   2: (mobile: (33px, 38px, 17px), tablet: (36px, 44px, 21px), desktop: (40px, 48px, 25px)),
-  3: (mobile: ($h3-font-size, 38px, 17px), tablet: ($h3-font-size, 44px, 21px), desktop: ($h3-font-size, 48px, 25px)),
+  3: (mobile: ($h3-font-size, 38px, 10px), tablet: ($h3-font-size, 44px, 10px), desktop: ($h3-font-size, 48px, 10px)),
   4: (mobile: (23px, 30px, 13px), tablet: (24px, 32px, 15px), desktop: (25px, 32px, 17px)),
 );
 
