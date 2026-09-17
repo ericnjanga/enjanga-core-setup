@@ -1,6 +1,6 @@
 {
   "name": "enjanga-core-setup",
-  "version": "1.0.41",
+  "version": "1.0.42",
   "description": "Shared Carbon foundations, Sass utilities, and theme assets for Enjanga interfaces.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
