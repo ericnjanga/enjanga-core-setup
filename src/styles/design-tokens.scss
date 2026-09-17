@@ -62,6 +62,7 @@
   --enj-case-study-intro-foreground: #fff;
   --enj-case-study-intro-size: 110px;
   --enj-case-study-intro-label-width: 105px;
+  --enj-interactive-image-label-padding: 1.5rem;
   --enj-case-study-intro-offset-x: -11px;
   --enj-case-study-intro-offset-y: -9.5px;
   --enj-case-study-poster-inset: calc(-1.25% - 3.08px);
@@ -269,8 +270,8 @@
   --enj-home-hero-top-space: clamp(3rem, 8vw, 7rem);
   --enj-home-hero-bottom-space: clamp(6rem, 27.778vw, 25rem);
   --enj-home-expertise-item-gap: clamp(2.5rem, 4.444vw, 4rem);
-  --enj-home-expertise-list-top-space: clamp(1.75rem, 3.125vw, 2.8125rem);
-  --enj-home-expertise-list-bottom-space: clamp(2.25rem, 3.472vw, 3.125rem);
+  --enj-home-expertise-list-top-space: 0;
+  --enj-home-expertise-list-bottom-space: clamp(1.25rem, 3.472vw, 2.325rem);
   --enj-home-expertise-divider-width: 20.125rem;
   --enj-home-expertise-divider-color: var(--enj-case-study-page-divider-color);
   --enj-home-expertise-height: clamp(37.5rem, 54.167vw, 48.75rem);
@@ -280,15 +281,15 @@
 
 // Lightweight reveal preview: static shapes, opacity-only crossfade.
 :root {
-  --enj-reveal-preview-color: rgb(51 65 85 / 50%);
+  --enj-reveal-preview-color: rgb(51 65 85 / 70%);
   --enj-reveal-preview-blur: 6px;
   --enj-reveal-preview-duration: 700ms;
   --enj-reveal-preview-easing: cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 :root[data-theme='dark'] {
-  --enj-reveal-preview-color: rgb(219 234 254 / 50%);
+  --enj-reveal-preview-color: rgb(219 234 254 / 70%);
 }
 :root {
-  --enj-home-hero-action-margin-top: clamp(1.5rem, 3vw, 3rem);
+  --enj-home-hero-action-margin-top: clamp(0.5rem, 2vw, 1rem);
 }
