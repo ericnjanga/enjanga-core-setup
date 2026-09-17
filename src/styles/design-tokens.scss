@@ -280,14 +280,14 @@
 
 // Lightweight reveal preview: static shapes, opacity-only crossfade.
 :root {
-  --enj-reveal-preview-color: rgb(51 65 85 / 32%);
+  --enj-reveal-preview-color: rgb(51 65 85 / 50%);
   --enj-reveal-preview-blur: 6px;
   --enj-reveal-preview-duration: 700ms;
   --enj-reveal-preview-easing: cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 :root[data-theme='dark'] {
-  --enj-reveal-preview-color: rgb(219 234 254 / 38%);
+  --enj-reveal-preview-color: rgb(219 234 254 / 50%);
 }
 :root {
   --enj-home-hero-action-margin-top: clamp(1.5rem, 3vw, 3rem);
