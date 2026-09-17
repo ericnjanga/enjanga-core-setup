@@ -277,3 +277,10 @@
   --enj-home-about-top-space: clamp(6rem, 24.444vw, 22rem);
   --enj-home-about-bottom-space: clamp(6rem, 19.444vw, 17.5rem);
 }
+
+// Lightweight reveal preview: static shapes, opacity-only crossfade.
+:root {
+  --enj-reveal-preview-color: color-mix(in srgb, currentColor 18%, transparent);
+  --enj-reveal-preview-blur: 6px;
+  --enj-reveal-preview-duration: 300ms;
+}
