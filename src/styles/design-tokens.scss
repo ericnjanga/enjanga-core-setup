@@ -104,8 +104,9 @@
   --enj-case-studies-hero-height: auto;
   --enj-case-studies-hero-padding: 32px 80px;
   --enj-case-studies-title-width: 736px;
-  --enj-case-studies-list-gap: clamp(6rem, 19.444vw, 17.5rem);
-  --enj-case-studies-divider-color: var(--enj-case-study-page-divider-color);
+  // Space on each side of the explicit case study separator.
+  --enj-case-studies-list-gap: clamp(2rem, 9.722222vw, 8.75rem);
+  --enj-case-studies-divider-color: color-mix(in srgb, var(--enj-case-study-foreground) 20%, transparent);
   --enj-case-studies-bottom-space: clamp(6rem, 15vw, 13.5rem);
 }
 @include responsive.tablet {
