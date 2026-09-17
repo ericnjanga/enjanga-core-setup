@@ -282,5 +282,6 @@
 :root {
   --enj-reveal-preview-color: color-mix(in srgb, currentColor 18%, transparent);
   --enj-reveal-preview-blur: 6px;
-  --enj-reveal-preview-duration: 300ms;
+  --enj-reveal-preview-duration: 700ms;
+  --enj-reveal-preview-easing: cubic-bezier(0.22, 0.61, 0.36, 1);
 }
